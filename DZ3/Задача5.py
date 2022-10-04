@@ -2,28 +2,26 @@
 # Пример:
 # k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
 
-def input_numbers ():
-    while True:
-        numb = input('введите число - ')
-        try:
-            numbers = int(numb)
-            return numbers
-        except:
-            print('не число')
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return (fibonacci(n-1) + fibonacci(n-2))
 
-def get_two_numb (num):
-    numb_1 = 1
-    numb_2 = 1
-    fibo_nums = []
-    for i in range(num):
-        fibo_nums.append(numb_1)
-        numb_1, numb_2 = numb_2, numb_1 + numb_2
-    numb_1 = 0
-    numb_2 = 1
-    for i in range(num+1):
-        fibo_nums.insert(0, numb_1)
-        numb_1, numb_2 = numb_2, numb_1 - numb_2
-    return fibo_nums
+def fibonacci_back(n):
+    if n <= 1:
+        return n
+    else:
+        return (fibonacci_back(n-2) - fibonacci_back(n-1))
 
-number = input_numbers()
-print(f' Числа Негафибаначчи : {get_two_numb(number)}')
+n = int(input('Введите число: '))
+
+fibo_series = []
+
+for i in range(0, n):
+    fibo_series.append(fibonacci(i))
+
+for i in range(1, n):
+    fibo_series.insert(0,fibonacci_back(i))
+
+print(fibo_series)
