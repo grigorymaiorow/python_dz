@@ -1,6 +1,9 @@
 # Задайте список из n чисел последовательности (1 + 1/i)**i и выведите на экран их сумму.
 
 n = int(input('Введите число: '))
-my_list = [[n, round(((1+1/n)**n),2)] for n in range(1,n+1)]
-print('Последовательность чисел: ', dict(my_list))
-print('Сумма чисел последовательности: ', sum(dict(my_list)))
+my_list = []
+
+for i in range(1, n+1):
+    my_list.append(round((1+1/i)**i,2))
+print(my_list)
+print(sum(my_list))
