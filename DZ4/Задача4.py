@@ -27,8 +27,8 @@ import random
 
 
 # Вариант2
-n = int(input("Введите натуральную степень k: "))
-
+# n = int(input("Введите натуральную степень k: "))
+n = 4
 my_dict = {}
 
 def polinom(n):
@@ -37,7 +37,7 @@ def polinom(n):
             el = random.randint(0,100)
             if el > 0:
                 if num == 0:
-                    my_dict[f"x"] = el
+                    my_dict[""] = el
                 else:
                     my_dict[f"x^{num}"] = el    
     return my_dict
