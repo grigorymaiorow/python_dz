@@ -1,5 +1,7 @@
 # Задайте последовательность чисел. 
 # Напишите программу, которая выведет список неповторяющихся элементов исходной последовательности.
+import os
+os.system('cls||clear')
 
 def input_number():
     while True:
@@ -27,4 +29,3 @@ for i in range(len(my_list)):
         new_list.append(my_list[i])
             
 print(new_list)
-

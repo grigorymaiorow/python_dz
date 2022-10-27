@@ -1,9 +1,26 @@
 # Задайте натуральное число N. Напишите программу, которая составит список простых множителей числа N.
 
-user_number = int(input('Введите число: '))
+n = 12345
 
+# Вариант1
+my_list = []
+for i in range(2,n+1):
+    j = 2
+    count = 0
+    while j < i + 1:
+        if i % j == 0:
+            count += 1
+        j += 1
+    if count < 2 and n % i == 0:
+            my_list.append(i)
+
+
+print(my_list)          
+
+
+# Вариант2
 i = 2
-multipliers = []
+multipliers = [1]
 while i * i <= user_number:
     while user_number % i == 0:
         multipliers.append(i)
