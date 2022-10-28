@@ -12,32 +12,32 @@ os.system('cls||clear')
 
 import random
 
-count = 2021
+count = 220
 
 
 # Игра человек - человек (без проверки "на дурака")
 
-# while count > 0:
-#     game_first = int(input("Сколько конфет хотите забрать, game_first ?: "))
-#     while game_first not in range(1,29):
-#         game_first = int(input("Сколько конфет хотите забрать, game_first ?: "))
+while count > 0:
+    game_first = int(input("Сколько конфет хотите забрать, game_first ?: "))
+    while game_first not in range(1,29):
+        game_first = int(input("Сколько конфет хотите забрать, game_first ?: "))
     
-#     count -= game_first
-#     print("Осталось " f"{count}" " конфет")
+    count -= game_first
+    print("Осталось " f"{count}" " конфет")
     
-#     if count <= 0:
-#         print("Победил game_first")
-#         break
+    if count <= 0:
+        print("Победил game_first")
+        break
 
-#     else:
-#         game_second = int(input("Сколько конфет хотите забрать, game_second ?: "))
-#         while game_second not in range(1,29):
-#             game_second = int(input("Сколько конфет хотите забрать, game_second ?: "))
-#         count -= game_second
-#         print("Осталось " f"{count}" " конфет")
-#         if count <= 0:
-#             print("Победил game_second")
-#             break
+    else:
+        game_second = int(input("Сколько конфет хотите забрать, game_second ?: "))
+        while game_second not in range(1,29):
+            game_second = int(input("Сколько конфет хотите забрать, game_second ?: "))
+        count -= game_second
+        print("Осталось " f"{count}" " конфет")
+        if count <= 0:
+            print("Победил game_second")
+            break
 
 
 
