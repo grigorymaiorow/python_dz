@@ -1,4 +1,3 @@
-
 def proverka_polya():
 
     while True:
