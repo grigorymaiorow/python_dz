@@ -11,6 +11,7 @@ def draw_file(struct_dict):
             ["--", "--","--","--"],
             ["Y3", f"{struct_dict['x1y3']}",f"{struct_dict['x2y3']}",f"{struct_dict['x3y3']}"],
         ]
+        
     )
     print(my_table)
 

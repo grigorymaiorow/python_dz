@@ -1,7 +1,7 @@
 from random import choice
 
 
-def filling():
+def filling(str):
     my_dict = \
     {
         'x1y1' : '' , 'x2y1' : ''  , 'x3y1' : '' ,
@@ -9,5 +9,5 @@ def filling():
         'x1y3' : '' , 'x2y3' : ''  , 'x3y3' : ''
     }
     for key in my_dict:
-        my_dict[key] = choice('X O')
+        my_dict[key] = choice(str)
     return my_dict
