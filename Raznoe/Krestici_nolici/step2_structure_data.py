@@ -1,55 +1,9 @@
-from step2_proverka_polya import proverka_polya
-from step2_proveka_znacheniya import proverka_znacheniya
-
-# def new_structure():
-#     my_dict = {'x1y1' : '', 'x2y1' : '', 'x3y1' : '', 'x1y2' : '', 'x2y2' : '', 'x3y2' : '', 'x1y3' : '', 'x2y3' : '', 'x3y3' : ''}
-
-#     while len(my_dict) != 18:
-#         p = proverka_polya()
-#         if p == "":
-#             break
-
-#         while my_dict.get(f"{p}") != '':
-#             print("Эта ячейка уже занята.")
-#             p = proverka_polya()
-
-#         z = proverka_znacheniya()
-#         if z == "":
-#             break
-
-#         my_dict[f"{p}"] = z
+from step2_proverka_polya_znacheniya import proverka_polya
+# from step2_proverka_polya_znacheniya import proverka_znacheniya
 
 
-#     my_dict = dict(sorted(my_dict.items()))
-#     return my_dict
+def new_structure(my_dict, count):
 
-
-# new_structure()
-
-
-# def new_structure(my_dict):
-    
-#     p = proverka_polya()
-
-#     while p == "": 
-#         break
-
-#     else:
-#         while my_dict.get(f"{p}") != '':
-#             print("Эта ячейка уже занята.")
-#             p = proverka_polya()
-
-#             z = proverka_znacheniya()
-#             while z == "":
-#                 break
-
-#             else: my_dict[f"{p}"] = z
-
-    
-#     return my_dict
-
-
-def new_structure(my_dict):
     
     p = proverka_polya()
 
@@ -61,9 +15,11 @@ def new_structure(my_dict):
         print("Эта ячейка уже занята.")
         p = proverka_polya()
 
-    z = proverka_znacheniya()
-    if z == "":
-        quit()
+    
+    if count % 2 == 0:
+        z = "X"
+    else:
+        z = "0"
 
     my_dict[f"{p}"] = z
 
