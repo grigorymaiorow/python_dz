@@ -1,5 +1,4 @@
 from step2_proverka_polya_znacheniya import proverka_polya
-# from step2_proverka_polya_znacheniya import proverka_znacheniya
 
 
 def new_structure(my_dict, count):
