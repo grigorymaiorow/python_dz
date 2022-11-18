@@ -11,35 +11,7 @@ def draw_file(struct_dict):
             ["--", "--","--","--"],
             ["Y3", f"{struct_dict['x1y3']}",f"{struct_dict['x2y3']}",f"{struct_dict['x3y3']}"],
         ]
+        
     )
     print(my_table)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Второй вариант заполнения (для себя)
-# from texttable import Texttable
-# myt_table = Texttable()
-# my_list = list(struct_dict.values())
-# myt_table.add_rows([["1","2","3"], my_list[:3], my_list[3:6], my_list[6:9]])
-# print(myt_table.draw())
