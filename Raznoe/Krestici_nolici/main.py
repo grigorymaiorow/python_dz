@@ -3,7 +3,7 @@ from step2_structure_data import new_structure
 from step1_draw_file import draw_file
 from step1_structure_data import filling
 from step2_who_win import who_win 
-from step2_who_win import who_winas
+from step2_who_win import who_line
 
 os.system('cls||clear')
 
@@ -45,4 +45,4 @@ while not who_win(my_dict) and count != 9:
 else: 
     print("Ничья")
 
-who_winas(my_dict)
+who_line(my_dict)

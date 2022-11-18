@@ -30,7 +30,7 @@ def who_win(my_dict):
 
 
 
-def who_winas(my_dict):
+def who_line(my_dict):
     if my_dict['x1y1'] == my_dict['x2y1'] == my_dict['x3y1']:
         print("Победила строка 'x1y1 - 'x2y1' - 'x3y1' ")
     if my_dict['x1y1'] == my_dict['x1y2'] == my_dict['x1y3']:
@@ -45,7 +45,6 @@ def who_winas(my_dict):
     if my_dict['x2y1'] == my_dict['x2y2'] == my_dict['x2y3']:
         print("Победил столбец 'x2y1 - 'x2y2' - 'x2y3' ")
         
-
     if my_dict['x1y3'] == my_dict['x2y3'] == my_dict['x3y3']:
         print("Победила строка 'x1y - 'x2y3' - 'x3y3' ")
     if my_dict['x3y1'] == my_dict['x3y2'] == my_dict['x3y3']:
